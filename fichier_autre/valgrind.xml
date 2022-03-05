@@ -1,0 +1,566 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./dynamic_struc</line>
+</preamble>
+
+<pid>12124</pid>
+<ppid>2501</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=valgrind.xml</arg>
+  </vargv>
+  <argv>
+    <exe>./dynamic_struc</exe>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.046 </time>
+</status>
+
+<error>
+  <unique>0x0</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x10931E</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>find</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>22</line>
+    </frame>
+    <frame>
+      <ip>0x1088E3</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>test_set__find</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>15</line>
+    </frame>
+    <frame>
+      <ip>0x109237</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>main</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>116</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x1</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x10931E</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>find</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>22</line>
+    </frame>
+    <frame>
+      <ip>0x10957F</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>set__add</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>70</line>
+    </frame>
+    <frame>
+      <ip>0x108E64</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>adding_elmt__set</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>75</line>
+    </frame>
+    <frame>
+      <ip>0x109269</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>main</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>121</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x2</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x10931E</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>find</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>22</line>
+    </frame>
+    <frame>
+      <ip>0x10957F</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>set__add</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>70</line>
+    </frame>
+    <frame>
+      <ip>0x108ECB</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>adding_elmt__set</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>78</line>
+    </frame>
+    <frame>
+      <ip>0x109269</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>main</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>121</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x3</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x10931E</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>find</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>22</line>
+    </frame>
+    <frame>
+      <ip>0x109630</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>set__add</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>87</line>
+    </frame>
+    <frame>
+      <ip>0x108F57</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>adding_elmt__set</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>81</line>
+    </frame>
+    <frame>
+      <ip>0x109269</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>main</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>121</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x4</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x10931E</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>find</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>22</line>
+    </frame>
+    <frame>
+      <ip>0x10957F</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>set__add</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>70</line>
+    </frame>
+    <frame>
+      <ip>0x109070</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>removing_elmt__set</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>91</line>
+    </frame>
+    <frame>
+      <ip>0x109273</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>main</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>122</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x5</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x10931E</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>find</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>22</line>
+    </frame>
+    <frame>
+      <ip>0x10957F</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>set__add</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>70</line>
+    </frame>
+    <frame>
+      <ip>0x109081</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>removing_elmt__set</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>92</line>
+    </frame>
+    <frame>
+      <ip>0x109273</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>main</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>122</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x10931E</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>find</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>22</line>
+    </frame>
+    <frame>
+      <ip>0x109630</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>set__add</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>87</line>
+    </frame>
+    <frame>
+      <ip>0x109092</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>removing_elmt__set</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>93</line>
+    </frame>
+    <frame>
+      <ip>0x109273</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>main</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>122</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x7</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x10931E</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>find</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>22</line>
+    </frame>
+    <frame>
+      <ip>0x10957F</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>set__add</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>70</line>
+    </frame>
+    <frame>
+      <ip>0x109192</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>free__SET</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>105</line>
+    </frame>
+    <frame>
+      <ip>0x10927D</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>main</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>123</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x8</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x10931E</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>find</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>22</line>
+    </frame>
+    <frame>
+      <ip>0x10957F</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>set__add</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>70</line>
+    </frame>
+    <frame>
+      <ip>0x1091A3</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>free__SET</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>106</line>
+    </frame>
+    <frame>
+      <ip>0x10927D</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>main</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>123</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x9</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x10931E</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>find</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>22</line>
+    </frame>
+    <frame>
+      <ip>0x109630</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>set__add</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>87</line>
+    </frame>
+    <frame>
+      <ip>0x1091B4</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>free__SET</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>107</line>
+    </frame>
+    <frame>
+      <ip>0x10927D</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>main</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>123</line>
+    </frame>
+  </stack>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:00.505 </time>
+</status>
+
+<error>
+  <unique>0xa</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>8 bytes in 1 blocks are definitely lost in loss record 1 of 2</text>
+    <leakedbytes>8</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C31B0F</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x10898A</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>test_find</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>21</line>
+    </frame>
+    <frame>
+      <ip>0x109241</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>main</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>117</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xb</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>16 bytes in 1 blocks are definitely lost in loss record 2 of 2</text>
+    <leakedbytes>16</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C33D2F</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>realloc</fn>
+    </frame>
+    <frame>
+      <ip>0x10954F</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>set__add</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>set_dynamic.c</file>
+      <line>69</line>
+    </frame>
+    <frame>
+      <ip>0x1091A3</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>free__SET</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>106</line>
+    </frame>
+    <frame>
+      <ip>0x10927D</ip>
+      <obj>/home/user/t/pg116-14752/dynamic_struc</obj>
+      <fn>main</fn>
+      <dir>/home/user/t/pg116-14752/dynamic</dir>
+      <file>test_dynamic_struc.c</file>
+      <line>123</line>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+  <pair>
+    <count>1</count>
+    <unique>0x9</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x8</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x7</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x6</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x5</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x4</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x3</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x2</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x1</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x0</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

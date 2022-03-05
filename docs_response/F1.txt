@@ -1,0 +1,75 @@
+TAD=>plusieurs facons via des structures de representer ce dernier.
+TA=>defini via une structure en type incomplet dans le contrat: set/set.h
+ +ses primitives triviales.
+
+Le lien de verification si une quelconque structure respecte le contrat DU type est de verifier via cette structure des axiomes qu'on declarent apres les primitives sur les fonctions.
+
+->2 mises en oeuvre + tests:
+rq: CPPFLAGS = -I ${SET_DIR} -I ${SEN_DIR} -I ${DYN_DIR} -I ${LNK_DIR}
+&& CFLAGS = -std=c99 -g
+make sentinel_struc: 
+${SEN_DIR}/sentinel_test_struc.c ${SEN_DIR}/set_sentinel.h
+	cc ${CPPFLAGS} ${CFLAGS} ${SEN_DIR}/test_sentinel_struc.c -c
+de meme pour set_sentinel.o tq set_sentinel.h inclut set.h.
+puis: ${CC} %.o -o $@ ${LDFLAGS}
+.PHONY='rien'
+LDFLAGS=
+ (RIEN).
+Puis la meme chose avec set_dynamic.c.
+rq2: set.h puis sentinel/dynamic __set.h  qui va l'inclure contenant l'implementation du TAD en terme de quelle structure de donnees sans pointage et quelques fonctions libres specifiques de limplementation choisie.(annexes a eux).
+
+
+*********************************************
+EXO1:
+1.Abstraction d'une structure de donnees pour la rendre de plus en plus dynamique et permettre de rendre un fichier.h un interface public a l'utilisateur pour qu'il implemente ce qu'il veut<=>abstraction de l'implementation suivant un fichier contrat .h.
+=>plusieurs implementations possibles.
+=>peut englober des generalisations suivant le niveau d'abstraction.
+2.l'implementation differe et la facon d'ecrire les primitives en depend fortement.(dynamique des fonctions annexes vues precedemment)
+3.Car des fonctionnalitees logicielles passent par la manipulation de TADs, donc il faut ecrire des algorithmes dessus a partir du TAD lui-meme (definition suivant les primitives + les axiomes) pour choisir l'implementation adequate de complexite minimale.
+*****************************************
+EXO2:
+1.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
